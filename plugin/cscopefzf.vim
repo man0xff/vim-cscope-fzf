@@ -1,7 +1,3 @@
-let g:cscope_reffile = '.tmp.cscope.out'
-" let g:cscope_default_mappings = 1
-
-
 let s:targets = {
 \   's': ['0', 'symbol'],
 \   'd': ['1', 'function'],
@@ -37,14 +33,14 @@ endfunction
 function! CscopeJump(target)
 endfunction
 
-if s:use_default_mappings
-    nnoremap <leader>s :call Cscope('s', expand('<cword>'))<cr>
-    nnoremap <leader>d :call Cscope('d', expand('<cword>'))<cr>
-    nnoremap <leader>C :call Cscope('C', expand('<cword>'))<cr>
-    nnoremap <leader>c :call Cscope('c', expand('<cword>'))<cr>
-    nnoremap <leader>t :call Cscope('t', expand('<cword>'))<cr>
-    nnoremap <leader>e :call Cscope('e', expand('<cword>'))<cr>
-    nnoremap <leader>f :call Cscope('f', expand('<cfile>'))<cr>
-    nnoremap <leader>i :call Cscope('i', expand('<cfile>'))<cr>
-    nnoremap <leader>a :call Cscope('a', expand('<cword>'))<cr>
-endif
+" if s:use_default_mappings
+"     nnoremap <leader>s :call Cscope('s', expand('<cword>'))<cr>
+"     nnoremap <leader>d :call Cscope('d', expand('<cword>'))<cr>
+"     nnoremap <leader>C :call Cscope('C', expand('<cword>'))<cr>
+"     nnoremap <leader>c :call Cscope('c', expand('<cword>'))<cr>
+"     nnoremap <leader>t :call Cscope('t', expand('<cword>'))<cr>
+"     nnoremap <leader>e :call Cscope('e', expand('<cword>'))<cr>
+"     nnoremap <leader>f :call Cscope('f', expand('<cfile>'))<cr>
+"     nnoremap <leader>i :call Cscope('i', expand('<cfile>'))<cr>
+"     nnoremap <leader>a :call Cscope('a', expand('<cword>'))<cr>
+" endif
